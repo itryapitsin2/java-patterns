@@ -1,4 +1,4 @@
-package problems.concatenationofarray;
+package problems.ConcatenationOfArray;
 
 import java.util.Arrays;
 

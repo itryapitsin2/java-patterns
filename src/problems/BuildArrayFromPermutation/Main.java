@@ -1,4 +1,4 @@
-package problems.buildarrayfrompermutation;
+package problems.BuildArrayFromPermutation;
 
 
 import java.util.Arrays;

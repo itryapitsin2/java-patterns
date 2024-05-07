@@ -1,4 +1,4 @@
-package problems.scoreofstring;
+package problems.ScoreOfString;
 
 
 public class Main {

@@ -1,4 +1,4 @@
-package problems.scoreofstring;
+package problems.ScoreOfString;
 
 public class Solution1 {
     public int scoreOfString(String s) {

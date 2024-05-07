@@ -1,4 +1,4 @@
-package problems.finalvalueofvariableafterperformingoperations;
+package problems.FinalValueOfVariableAfterPerformingOperations;
 
 public class Main {
     public static void main(String[] args) {

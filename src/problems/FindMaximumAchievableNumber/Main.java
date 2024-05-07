@@ -1,4 +1,4 @@
-package problems.findmaximumachievablenumber;
+package problems.FindMaximumAchievableNumber;
 
 public class Main {
     public static void main(String[] args) {

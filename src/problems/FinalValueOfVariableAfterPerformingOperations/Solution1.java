@@ -1,4 +1,4 @@
-package problems.finalvalueofvariableafterperformingoperations;
+package problems.FinalValueOfVariableAfterPerformingOperations;
 
 public class Solution1 {
     public int finalValueAfterOperations(String[] operations) {

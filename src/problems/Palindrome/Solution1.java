@@ -1,4 +1,4 @@
-package problems.palindrome;
+package problems.Palindrome;
 
 public class Solution1 {
     public boolean isPalindrome(int x) {

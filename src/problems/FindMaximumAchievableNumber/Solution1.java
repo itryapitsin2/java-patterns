@@ -1,4 +1,4 @@
-package problems.findmaximumachievablenumber;
+package problems.FindMaximumAchievableNumber;
 
 public class Solution1 {
     public int theMaximumAchievableX(int num, int t) {

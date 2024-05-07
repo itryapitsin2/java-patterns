@@ -1,4 +1,4 @@
-package problems.numberofgoodpairs;
+package problems.NumberOfGoodPairs;
 
 public class Solution1 {
     public int numIdenticalPairs(int[] nums) {

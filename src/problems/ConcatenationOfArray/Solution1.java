@@ -1,4 +1,4 @@
-package problems.concatenationofarray;
+package problems.ConcatenationOfArray;
 
 public class Solution1 {
     public int[] getConcatenation(int[] nums) {
