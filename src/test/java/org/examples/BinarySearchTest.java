@@ -1,18 +1,16 @@
 package org.examples;
 
 import DataStructures.algorithms.search.BinarySearch;
-import DataStructures.algorithms.search.LinearSearch;
+import DataStructures.algorithms.search.BinarySearch.Type;
 import DataStructures.algorithms.sort.BubbleSort;
 import DataStructures.algorithms.sort.CombSort;
 import DataStructures.algorithms.sort.InsertionSort;
 import DataStructures.algorithms.sort.MixSort;
 import DataStructures.algorithms.sort.SelectionSort;
-import DataStructures.types.Array;
 import DataStructures.types.Comparable;
 import DataStructures.types.OrderedArray;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
 import java.util.Random;
 
 public class BinarySearchTest {
@@ -30,12 +28,12 @@ public class BinarySearchTest {
         }
 
         @Override
-        public boolean right(Element element) {
+        public boolean left(Element element) {
             return element.value > value;
         }
 
         @Override
-        public boolean left(Element element) {
+        public boolean right(Element element) {
             return element.value < value;
         }
 
@@ -61,12 +59,12 @@ public class BinarySearchTest {
 
         Element i = array.getItem(5);
         BinarySearch<Element> linearSearch = new BinarySearch<>();
-        Assertions.assertEquals(linearSearch.has(array, i), 5);
+        Assertions.assertEquals(linearSearch.find(array, i), 5);
 
         i = array.getItem(9);
-        Assertions.assertEquals(linearSearch.has(array, i), 9);
+        Assertions.assertEquals(linearSearch.find(array, i), 9);
 
-        Assertions.assertNotEquals(linearSearch.has(array, new Element(i.getValue() + 1000)), 9);
+        Assertions.assertNotEquals(linearSearch.find(array, new Element(i.getValue() + 1000)), 9);
     }
 
     @Test
@@ -81,12 +79,12 @@ public class BinarySearchTest {
 
         Element i = array.getItem(5);
         BinarySearch<Element> linearSearch = new BinarySearch<>();
-        Assertions.assertEquals(linearSearch.has(array, i), 5);
+        Assertions.assertEquals(linearSearch.find(array, i), 5);
 
         i = array.getItem(9);
-        Assertions.assertEquals(linearSearch.has(array, i), 9);
+        Assertions.assertEquals(linearSearch.find(array, i), 9);
 
-        Assertions.assertNotEquals(linearSearch.has(array, new Element(i.getValue() + 1000)), 9);
+        Assertions.assertNotEquals(linearSearch.find(array, new Element(i.getValue() + 1000)), 9);
     }
 
     @Test
@@ -100,13 +98,13 @@ public class BinarySearchTest {
         }
 
         Element i = array.getItem(5);
-        BinarySearch<Element> linearSearch = new BinarySearch<>();
-        Assertions.assertEquals(linearSearch.has(array, i), 5);
+        BinarySearch<Element> linearSearch = new BinarySearch<>(Type.RECURSIVE);
+        Assertions.assertEquals(5, linearSearch.find(array, i));
 
         i = array.getItem(9);
-        Assertions.assertEquals(linearSearch.has(array, i), 9);
+        Assertions.assertEquals(9, linearSearch.find(array, i));
 
-        Assertions.assertNotEquals(linearSearch.has(array, new Element(i.getValue() + 1000)), 9);
+        Assertions.assertNotEquals(linearSearch.find(array, new Element(i.getValue() + 1000)), 9);
     }
 
     @Test
@@ -121,12 +119,12 @@ public class BinarySearchTest {
 
         Element i = array.getItem(5);
         BinarySearch<Element> linearSearch = new BinarySearch<>();
-        Assertions.assertEquals(linearSearch.has(array, i), 5);
+        Assertions.assertEquals(linearSearch.find(array, i), 5);
 
         i = array.getItem(9);
-        Assertions.assertEquals(linearSearch.has(array, i), 9);
+        Assertions.assertEquals(linearSearch.find(array, i), 9);
 
-        Assertions.assertNotEquals(linearSearch.has(array, new Element(i.getValue() + 1000)), 9);
+        Assertions.assertNotEquals(linearSearch.find(array, new Element(i.getValue() + 1000)), 9);
     }
 
     @Test
@@ -141,11 +139,11 @@ public class BinarySearchTest {
 
         Element i = array.getItem(5);
         BinarySearch<Element> linearSearch = new BinarySearch<>();
-        Assertions.assertEquals(linearSearch.has(array, i), 5);
+        Assertions.assertEquals(linearSearch.find(array, i), 5);
 
         i = array.getItem(9);
-        Assertions.assertEquals(linearSearch.has(array, i), 9);
+        Assertions.assertEquals(linearSearch.find(array, i), 9);
 
-        Assertions.assertNotEquals(linearSearch.has(array, new Element(i.getValue() + 1000)), 9);
+        Assertions.assertNotEquals(linearSearch.find(array, new Element(i.getValue() + 1000)), 9);
     }
 }

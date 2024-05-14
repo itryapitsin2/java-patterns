@@ -21,11 +21,11 @@ public class LinearSearchTest {
 
         int i = array.getItem(5);
         LinearSearch<Integer> linearSearch = new LinearSearch<>();
-        Assertions.assertEquals(linearSearch.has(array, i), 5);
+        Assertions.assertEquals(linearSearch.find(array, i), 5);
 
         i = array.getItem(9);
-        Assertions.assertEquals(linearSearch.has(array, i), 9);
+        Assertions.assertEquals(linearSearch.find(array, i), 9);
 
-        Assertions.assertNotEquals(linearSearch.has(array, i + 1000), 9);
+        Assertions.assertNotEquals(linearSearch.find(array, i + 1000), 9);
     }
 }

@@ -11,7 +11,7 @@ public class InsertionSort<T extends Comparable<T>> implements Sort<T> {
             key = items[i];
             j = i - 1;
 
-            while (j >= 0 && items[j].right(key)) {
+            while (j >= 0 && items[j].left(key)) {
                 items[j + 1] = items[j];
                 j = j - 1;
             }

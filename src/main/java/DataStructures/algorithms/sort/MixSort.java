@@ -9,7 +9,7 @@ public class MixSort<T extends Comparable<T>> implements Sort<T> {
         long right = count - 1;
         while (left <= right) {
             for (long i = right; i > left; --i) {
-                if (items[(int) (i - 1)].right(items[(int) i])) {
+                if (items[(int) (i - 1)].left(items[(int) i])) {
                     T tmp = items[(int) (i - 1)];
                     items[(int) (i - 1)] = items[(int) i];
                     items[(int) i] = tmp;
@@ -17,7 +17,7 @@ public class MixSort<T extends Comparable<T>> implements Sort<T> {
             }
             ++left;
             for (long i = left; i < right; ++i) {
-                if (items[(int) i].right(items[(int) (i + 1)])) {
+                if (items[(int) i].left(items[(int) (i + 1)])) {
                     T tmp = items[(int) i + 1];
                     items[(int) (i + 1)] = items[(int) i];
                     items[(int) i] = tmp;

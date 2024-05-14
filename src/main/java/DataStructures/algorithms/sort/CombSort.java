@@ -10,7 +10,7 @@ public class CombSort<T extends Comparable<T>> implements Sort<T> {
 
         while (step >= 1) {
             for (int i = 0; i + step < count; ++i) {
-                if (items[i].right(items[(int) (i + step)])) {
+                if (items[i].left(items[(int) (i + step)])) {
                     T tmp = items[(int) i + step];
                     items[(int) (i + step)] = items[(int) i];
                     items[(int) i] = tmp;

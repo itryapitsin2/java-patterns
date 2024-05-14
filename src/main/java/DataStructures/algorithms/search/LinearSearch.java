@@ -3,7 +3,7 @@ package DataStructures.algorithms.search;
 import DataStructures.types.List;
 
 public class LinearSearch<T> implements Search<List<T>, T> {
-    public int has(List<T> list, T element) {
+    public int find(List<T> list, T element) {
         for (int i = 0; i < list.getCount(); i++) {
             if (list.getItems()[i] == element) {
                 return i;

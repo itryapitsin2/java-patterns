@@ -8,7 +8,7 @@ public class SelectionSort<T extends Comparable<T>> implements Sort<T> {
         for (int i = 0; i < count - 1; i++) {
             int index = i;
             for (int j = i + 1; j < count; j++) {
-                if (items[j].left(items[index])) {
+                if (items[j].right(items[index])) {
                     index = j;
                 }
             }
