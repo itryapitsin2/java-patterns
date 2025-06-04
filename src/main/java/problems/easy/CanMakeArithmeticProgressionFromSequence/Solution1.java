@@ -1,4 +1,4 @@
-package problems.CanMakeArithmeticProgressionFromSequence;
+package problems.easy.CanMakeArithmeticProgressionFromSequence;
 
 import java.util.Arrays;
 

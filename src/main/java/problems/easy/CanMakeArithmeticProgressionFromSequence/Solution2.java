@@ -1,4 +1,4 @@
-package problems.CanMakeArithmeticProgressionFromSequence;
+package problems.easy.CanMakeArithmeticProgressionFromSequence;
 
 public class Solution2 {
     public boolean canMakeArithmeticProgression(int[] arr) {
