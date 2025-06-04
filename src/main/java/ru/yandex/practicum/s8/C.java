@@ -3,9 +3,8 @@ package ru.yandex.practicum.s8;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.stream.IntStream;
 
-public class С {
+public class C {
 
     private static final int SHIFT = 97;
 
@@ -26,16 +25,13 @@ public class С {
 
             for (int i = 0; i < alphabet.length; i++) {
                 var count = alphabet[i];
-//                if (count % 2 != 0) {
-//                    count--;
-//                }
 
                 for (int j = 0; j < count / 2; j++) {
                     result.append((char)(i + SHIFT));
                 }
             }
 
-            System.out.println("");
+//            System.out.println("");
         }
     }
 }
